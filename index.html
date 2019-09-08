@@ -5,8 +5,8 @@
   <meta charset="utf-8">
 
   <!-- links to Javascript & Ajax   -->
-  <script type="text/javascript" src="assets/javascript/giff.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
   <!-- links to CSS & Bootstrap & Google Fonts --> 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -23,15 +23,19 @@
   <h4>Click the buttons to display GIPHYs of your favorite Cartoon shows<br>Click the Giff to pause and play<br>Search to add more shows!</h4>
 </div>
 
+<div id="AddNewShow" style="align-items: center">
 <form class="form-inline" id="CartoonsSearch" >
-  <div class="form-group">
+  <div class="form-group" >
     <label for="CartoonsInput">Search for a Cartoon</label>
     <input type="text" id="CartoonsInput">
   </div>
 
+
   <!-- Show Button  -->
   <input id="addShow" type="submit" value="submit">
 </form>
+
+</div>
 
 <div class="row">
   <div class="container">
@@ -40,6 +44,8 @@
       <button class="btn btn-primary" id="show" data-search="The Simpsons">The Simpsons</button>
       <button class="btn btn-primary" id="show" data-search="Futurama">Futurama</button>
       <button class="btn btn-primary" id="show" data-search="Teen Titans Go">Teen Titans Go</button>
+      <button class="btn btn-primary" id="show" data-search="Family Guy">Family Guy</button>
+      <button class="btn btn-primary" id="show" data-search="American Dad">American Dad</button>
 
       <div id="myButtons"></div>
     </div>

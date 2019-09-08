@@ -30,10 +30,11 @@ label {
 	margin-bottom: 5px;
 }
 
-#netflixSearch {
+#cartoonsSearch {
 	margin: 0 auto;
 	text-align: center;
 	font-family: "Carrois Gothic SC", sans-serif;
+	align-items: center;
 }
 
 #gifArea {
@@ -42,7 +43,14 @@ label {
 	flex-wrap: wrap;
 }
 
-.netflixGiphy {
+.cartoonsGiphy {
 	padding: 2px;
 	width: 80%;
+}
+
+#AddNewShow {
+
+align-items: center; 
+align-content: center
+	
 }
