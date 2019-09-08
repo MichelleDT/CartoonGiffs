@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AJAX Giphy Button Review</title>
+	<title>CartoonGiffs</title>
   <meta charset="utf-8">
 
-  <script type="text/javascript" src="assets/javascript/app.js" </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- links to Javascript & Ajax   -->
+  <script type="text/javascript" src="assets/javascript/giff.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- links to CSS & Bootstrap & Google Fonts --> 
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
+
+
 <body id="wholeThing">
 
+<!-- Jumbotron  -->
 <div class="jumbotron" id="header" style = "text-align: center">
   <h1>Cartoon Lover</h1>
   <h4>Click the buttons to display GIPHYs of your favorite Cartoon shows<br>Click the Giff to pause and play<br>Search to add more shows!</h4>
@@ -21,10 +25,11 @@
 
 <form class="form-inline" id="CartoonsSearch" >
   <div class="form-group">
-    <label for="CartoonsInput">Search for a Cartoons</label>
+    <label for="CartoonsInput">Search for a Cartoon</label>
     <input type="text" id="CartoonsInput">
   </div>
-  <!-- Button triggers show to be added -->
+
+  <!-- Show Button  -->
   <input id="addShow" type="submit" value="submit">
 </form>
 
@@ -37,18 +42,16 @@
       <button class="btn btn-primary" id="show" data-search="Teen Titans Go">Teen Titans Go</button>
 
       <div id="myButtons"></div>
-    </div> <!--end of button group -->
-  </div> <!--end of container -->
-</div> <!--end of row -->
+    </div>
+  </div> 
+</div> 
 
-
+<!--Giff Display Area -->
 <div class="row">
   <div class="container">
       <span><div id="gifArea"></div></span>
-  </div> <!--end of container -->
-</div> <!-- end of row  -->
-
-
+  </div> 
+</div> 
 
 </body>
 </html>
